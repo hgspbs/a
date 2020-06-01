@@ -1,0 +1,12 @@
+Build
+ Kernel sources must be configured at /lib/modules/X.Y.Z/build or other location pointed by $KDIR
+ type make to build as a module
+
+Proc
+RTC mode is set by writing an integer value to /proc/a
+ -99..-1 - slowdown%
+ 1..100 - speedup%
+ any other value - random
+
+Test
+ a.sh
